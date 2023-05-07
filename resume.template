@@ -51,13 +51,16 @@
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
+                    {{#company}}
                     <div class="where">
-                      {{name}}
-                      {{#location}}
-                      <div class="pull-right">
-                        {{location}}
-                      </div>
-                      {{/location}}
+                      {{company}}
+                    </div>
+                    {{/company}}
+                    <div class="address">
+                      <a href="{{website}}" target="_blank">
+                        <i class="fas fa-globe ico"></i>
+                        {{website}}
+                      </a>
                     </div>
                     {{#description}}
                     <div class="description">
