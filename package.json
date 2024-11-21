@@ -4,7 +4,9 @@
   "description": "A JSON Resume theme built with bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx resume-cli serve",
+    "build": "npx resume-cli export --theme . ./public/index.html"
   },
   "author": "Brian Douglass",
   "license": "MIT",
@@ -25,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/bhdouglass/jsonresume-theme-kendall/issues"
   },
-  "homepage": "https://github.com/bhdouglass/jsonresume-theme-kendall"
+  "homepage": "https://github.com/bhdouglass/jsonresume-theme-kendall",
+  "devDependencies": {
+    "resume-cli": "^3.0.8"
+  }
 }
